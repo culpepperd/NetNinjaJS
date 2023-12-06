@@ -1,7 +1,21 @@
-let age = 25;
-let year = 2019;
+console.log('hello, world');
 
-console.log(age, year);
+let email = 'mario@thenetninja.co.uk';
+console.log(email);
 
-age = 30;
-console.log(age);
+// string concatenation
+let firstName = 'Brandon';
+let lastName = 'Sanderson';
+
+let fullName = firstName + ' ' + lastName;
+console.log(fullName);
+
+// getting characters
+console.log(fullName[2]);
+
+// string length
+console.log(fullName.length);
+
+// string methods
+console.log(fullName.toUpperCase());
+console.log(fullName.toLowerCase());
