@@ -6,8 +6,9 @@ console.log(email);
 // string concatenation
 let firstName = 'Brandon';
 let lastName = 'Sanderson';
+let space = ' ';
 
-let fullName = firstName + ' ' + lastName;
+let fullName = firstName + space + lastName;
 console.log(fullName);
 
 // getting characters
@@ -18,4 +19,8 @@ console.log(fullName.length);
 
 // string methods
 console.log(fullName.toUpperCase());
-console.log(fullName.toLowerCase());
+let result = fullName.toLowerCase();
+console.log(result);
+
+let index = email.indexOf('@');
+console.log(index);
