@@ -1,28 +1,12 @@
-let ninjas = ['Daniel', 'Tyrone', 'Leyla'];
-let folks = ['Tyrone', 'Renee'];
+let age;
 
-// ninjas[2] = 'Renee';
-// console.log(ninjas[2]);
+console.log(age, age + 3, `the age is ${age}`);
 
-// let ages = [20, 25, 30, 35];
-// console.log(ages[2]);
+// The browser automatically assigns the variable
+// as undefined when it doesn't have a value.
+// When we try to use an undefined variable in a 
+// formula, we get NaN (Not a Number)
 
-// let random = ['Daniel', 'Tyrone', 6.5, 11];
-// console.log(random);
+let ages = null;
 
-// console.log(ninjas.length);
-
-// let result = ninjas.join(', ');
-// let result = ninjas.indexOf('Jack');
-// let result = ninjas.concat(folks); // concatenates two arrays
-console.log(ninjas);
-ninjas.push('Shane', 'Renee');
-console.log(ninjas);
-
-console.log(ninjas.pop());
-console.log(ninjas.pop());
-console.log(ninjas.pop());
-console.log(ninjas.pop());
-
-
-console.log(ninjas); 
+console.log(ages, ages + 3, `the age is ${ages}`);
