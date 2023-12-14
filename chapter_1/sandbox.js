@@ -1,4 +1,4 @@
-let ninjas = ['Daniel', 'Jack', 'Leyla'];
+let ninjas = ['Daniel', 'Tyrone', 'Leyla'];
 let folks = ['Tyrone', 'Renee'];
 
 // ninjas[2] = 'Renee';
@@ -15,8 +15,14 @@ let folks = ['Tyrone', 'Renee'];
 // let result = ninjas.join(', ');
 // let result = ninjas.indexOf('Jack');
 // let result = ninjas.concat(folks); // concatenates two arrays
-ninjas.push('Shane');
-ninjas.pop();
-
-
 console.log(ninjas);
+ninjas.push('Shane', 'Renee');
+console.log(ninjas);
+
+console.log(ninjas.pop());
+console.log(ninjas.pop());
+console.log(ninjas.pop());
+console.log(ninjas.pop());
+
+
+console.log(ninjas); 
