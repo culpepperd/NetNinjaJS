@@ -1,12 +1,13 @@
-let age;
+// booleans and comparisons
+console.log(true, false, "true", "false");
 
-console.log(age, age + 3, `the age is ${age}`);
+// methods can return booleans
+let email = 'luigi@thenetninja.co.uk';
+let names = ['mario', 'luigi', 'toad'];
 
-// The browser automatically assigns the variable
-// as undefined when it doesn't have a value.
-// When we try to use an undefined variable in a 
-// formula, we get NaN (Not a Number)
+// let result = email.includes('!');
+let result = names.includes('luigi');
 
-let ages = null;
+console.log(result);
 
-console.log(ages, ages + 3, `the age is ${ages}`);
+// comparison operators
