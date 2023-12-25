@@ -1,10 +1,19 @@
-// logical NOT (!)
+// break and continue
 
-let user = false;
+const scores = [50, 25, 0, 30, 100, 20, 10];
 
-if(!user){
-    console.log("This is true!");
+for(let i = 0; i < scores.length; i++){
+
+    if(scores[i] < 30){
+        continue;
+    }
+
+    console.log("Your score: ", scores[i]);
+
+    if(scores[i] === 100){
+        console.log("Congrats, you got the top score!");
+        break;
+    }
+
 }
 
-console.log(!true);
-console.log(!false);
