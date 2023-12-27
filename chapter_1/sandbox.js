@@ -1,12 +1,7 @@
-// function declaration
-function greet(){
-    console.log("Hello there!");
+// arguments & parameters
+
+const quote = function(name, movie){
+    console.log(`"Hello there." - ${name}, ${movie}`);
 }
 
-// function expression
-const speak = function(){
-    console.log("Good day!");
-}
-
-speak();
-// greet();
+quote('Obi-Wan Kenobi', 'Attack of the Clones');
