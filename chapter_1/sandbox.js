@@ -1,12 +1,12 @@
-// returning values
-
-// const speak = function(name = 'Obi-Wan', planet = 'Tatooine'){
-//     console.log(`${name} is on planet ${planet}.`);
+// regular function
+// const calcArea = function(radius){
+//     return (3.14 * radius**2);
 // };
 
-const calcArea = function(radius){
-    return (3.14 * radius**2);
-};
+// area function
+// if only ONE parameter, do not need ()
+// if only ONE return statement, format like below
+const calcArea = radius => 3.14 * radius**2;
 
-let area = calcArea(1);
-console.log(area);
+const area = calcArea(4);
+console.log("The area is:", area);
