@@ -1,7 +1,12 @@
-// arguments & parameters
+// returning values
 
-const quote = function(name, movie){
-    console.log(`"Hello there." - ${name}, ${movie}`);
-}
+// const speak = function(name = 'Obi-Wan', planet = 'Tatooine'){
+//     console.log(`${name} is on planet ${planet}.`);
+// };
 
-quote('Obi-Wan Kenobi', 'Attack of the Clones');
+const calcArea = function(radius){
+    return (3.14 * radius**2);
+};
+
+let area = calcArea(1);
+console.log(area);
