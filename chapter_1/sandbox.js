@@ -1,26 +1,13 @@
-// practice arrow functions
+const myName = 'Daniel';
 
-// const greet = function(){
-//     return "Hello, world!";
-// };
+// functions
 
-// const greet = () => "Hello, world!";
-// console.log(greet());
+const greet = () => "Hello!";
 
-// const bill = function (products, tax){
-//     let total = 0;
-//     for(let i=0; i < products.length; i++){
-//         total += products[i] + products[i] * tax;
-//     }
-//     return total;
-// }
+let resultOne = greet();
+console.log(resultOne);
 
-const bill = (products, tax) => {
-    let total = 0;
-    for(let i=0; i < products.length; i++){
-        total += products[i] + products[i] * tax;
-    }
-    return total;
-}
+// methods
 
-console.log(bill([10, 15, 30], 0.2));
+let resultTwo = myName.toUpperCase();
+console.log(resultTwo);
