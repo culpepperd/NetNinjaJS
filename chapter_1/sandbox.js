@@ -1,13 +1,12 @@
-const myName = 'Daniel';
+// callbacks & foreach
 
-// functions
+const myFunc = (callbackFunc) => {
+    // do something
+    let value = 50;
+    callbackFunc(value);
+};
 
-const greet = () => "Hello!";
-
-let resultOne = greet();
-console.log(resultOne);
-
-// methods
-
-let resultTwo = myName.toUpperCase();
-console.log(resultTwo);
+myFunc(function(value){
+    // do something
+    console.log(value);
+});
