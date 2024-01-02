@@ -1,22 +1,14 @@
-// callbacks & foreach
+// get a reference to the 'ul'
+const ul = document.querySelector('.people');
 
-// const myFunc = (callbackFunc) => {
-//     // do something
-//     let value = 5;
-//     callbackFunc(value);
-// };
+const people = ['Daniel', 'Tracy', 'Monica', 'Renee', 'Leyla'];
 
-// // When we pass in a function as an argument,
-// // it's called a callback function
-// myFunc( value => {
-//         console.log(value);
-//         }
-// );
+let html = ``;
 
-let people = ['Daniel', 'Tracy', 'Monica', 'Renee', 'Leyla'];
+people.forEach(name => {
+    // create html template
+    html += `<li style="color: purple">${name}</li>`;
+});
 
-const logPerson = (person, index) => {
-    console.log(`${index} - hello ${person}`);
-}
-
-people.forEach(logPerson);
+console.log(html);
+ul.innerHTML = html;
