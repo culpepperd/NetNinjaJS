@@ -5,19 +5,20 @@ let user = {
     age: 33,
     email: 'ManMythLegend@gmail.com',
     location: 'Kentucky', 
-    blogs: ['Star Wars', 'Game of Thrones', 'Marvel']
+    blogs: ['Star Wars', 'Game of Thrones', 'Marvel'],
+    login: function(){
+        console.log('the user logged in');
+    },
+    logout: function(){
+        console.log('the user logged out');
+    },
+    logBlogs: function(){
+        
+    }
 };
 
-console.log(user);
+user.login();
+user.logout();
 
-// Can access an object's properties either by
-// dot notation or square bracket notation
-user.age = 34;
-console.log(user.age);
-
-console.log(user['location']);
-user['location'] = 'LA';
-console.log(user['location']);
-
-
-
+const name = 'mario';
+name.toUpperCase();
