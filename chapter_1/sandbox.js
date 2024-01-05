@@ -6,19 +6,20 @@ let user = {
     email: 'ManMythLegend@gmail.com',
     location: 'Kentucky', 
     blogs: ['Star Wars', 'Game of Thrones', 'Marvel'],
-    login: function(){
+    login(){
         console.log('the user logged in');
     },
-    logout: function(){
+    logout(){
         console.log('the user logged out');
     },
-    logBlogs: function(){
-        
+    logBlogs(){
+        // console.log(this.blogs);
+        console.log('this user has written the following blogs:');
+        this.blogs.forEach(blog => {
+            console.log(blog);
+        })
     }
 };
 
-user.login();
-user.logout();
-
-const name = 'mario';
-name.toUpperCase();
+user.logBlogs();
+// console.log(this);
