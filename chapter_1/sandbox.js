@@ -1,11 +1,22 @@
 // object literals
 
+const blogs = [
+    { title: 'Star Wars', likes: 30 },
+    { title: 'Game of Thrones', likes: 29 }
+];
+
+console.log(blogs);
+
 let user = {
     name: 'Daniel',
     age: 33,
     email: 'ManMythLegend@gmail.com',
     location: 'Kentucky', 
-    blogs: ['Star Wars', 'Game of Thrones', 'Marvel'],
+    blogs: [
+        { title: 'Star Wars', likes: 30 },
+        { title: 'Game of Thrones', likes: 29 }
+    
+    ],
     login(){
         console.log('the user logged in');
     },
@@ -16,7 +27,7 @@ let user = {
         // console.log(this.blogs);
         console.log('this user has written the following blogs:');
         this.blogs.forEach(blog => {
-            console.log(blog);
+            console.log(blog.title, blog.likes);
         })
     }
 };
